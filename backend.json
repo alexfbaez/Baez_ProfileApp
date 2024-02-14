@@ -1,0 +1,31 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "User",
+    "type": "object",
+    "properties": {
+      "bio": {
+        "type": "string",
+        "description": "A short biography of the user."
+      },
+      "image": {
+        "type": "string",
+        "format": "uri",
+        "description": "URL of the user's image."
+      },
+      "name": {
+        "type": "string",
+        "description": "The name of the user."
+      },
+      "count": {
+        "type": "integer",
+        "description": "A count associated with the user."
+      },
+      "highScore": {
+        "type": "integer",
+        "description": "The user's high score."
+      }
+    },
+    "required": ["name"],
+    "additionalProperties": false
+  }
+  
